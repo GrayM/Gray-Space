@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="./profile.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<script type="orange" id="github_profile_template">
+			<div class="profile">
+				<img src="<%= avatar_url %>">
+				<img class="bg" src = "http://www.neyralaw.com/wp-content/uploads/2012/07/tokyo-blue-background-4547.jpg">
+				<h2><a href="<%= html_url %>" target="_blank">@<%=login%></a></h2>
+				<hr>
+				<ul>
+					<li><strong>Name:</strong> <%= name %></li>
+					<li><strong>Company:</strong> <%= company %></li>
+					<li><strong>Blog:</strong> <a href="<%= blog %>"><%= blog %></a></li>
+					<li><strong>Location:</strong> <%= location %></li>
+					<li><strong>About him:</strong> <%= bio %></li>
+					<li><strong>Available for hire:</strong> <%= hireable %></li>
+					<li><strong>Followers:</strong> <%= followers %></li>
+					<li><strong>Following:</strong> <%= following %></li>
+				</ul>
+			</div>
+		</script>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src='./profile.js'></script>
+	</body>
+</html>

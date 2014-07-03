@@ -1,0 +1,51 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background:url(http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg);
+	/*background-position:absolute;*/
+	height:600px;
+	background-size:cover;
+}
+.bg {
+	position:absolute;
+	width:100%;
+	height:430px;
+	top:0px;
+	left:-0px;
+	z-index:-1;
+	
+}
+.profile {
+
+	max-width: 400px;
+	margin:50px auto;
+	padding: 20px;
+	min-height: 400px;
+	font-size: 1.25em;
+	font-weight:700;
+}
+
+.profile img {
+	display: inline-block;
+	max-width: 100%;
+	border-radius: 40%;
+}
+
+.profile h2 {
+	text-align: center;
+}
+
+.profile h2 a {
+	color: #9E0;
+	line-height: 1.5em;
+}
+
+.profile ul {
+	color: silver;
+}
+
+.profile ul a {
+	color: #7E0;
+}
