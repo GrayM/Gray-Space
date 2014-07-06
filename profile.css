@@ -1,51 +1,91 @@
 *, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .1s ease;
 }
 body {
-	background:url(http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg);
-	/*background-position:absolute;*/
-	height:600px;
-	background-size:cover;
+    background:url(http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg);
+    /*background-position:absolute;*/
+    height:600px;
+    background-size:cover;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 .bg {
-	position:absolute;
-	width:100%;
-	height:430px;
-	top:0px;
-	left:-0px;
-	z-index:-1;
-	
+    position:absolute;
+    width:100%;
+    height:430px;
+    top:0px;
+    left:-0px;
+    z-index:-1;
 }
 .profile {
-
-	max-width: 400px;
-	margin:50px auto;
-	padding: 20px;
-	min-height: 400px;
-	font-size: 1.25em;
-	font-weight:700;
+    max-width: 400px;
+    margin:50px auto;
+    padding: 20px;
+    min-height: 400px;
+    font-size: 1.25em;
+    font-weight:700;
 }
-
 .profile img {
-	display: inline-block;
-	max-width: 100%;
-	border-radius: 40%;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 40%;
 }
-
+#buttons {
+    width:250px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+button:active {
+    background-color:#222;
+    color:lime;
+}
+.b1, .b2 {
+    width:120px;
+    font-weight:bold;
+}
 .profile h2 {
-	text-align: center;
+    text-align: center;
+    color:lime;
 }
-
 .profile h2 a {
-	color: #9E0;
-	line-height: 1.5em;
+    color: #9E0;
+    -webkit-transition:.5s;
+    line-height: 1.5em;
 }
-
 .profile ul {
-	color: silver;
+    color: silver;
+    border: 3px silver outset;
+}
+img:hover {
+    -webkit-transform:scale(1.1);
+    /*opacity: 0;*/
+    width:100%;
+}
+.profile ul:hover {
+    text-shadow:1px 1px yellow;
+}
+.profile ul a {
+    color: #7E0;
 }
 
-.profile ul a {
-	color: #7E0;
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform:rotate(8deg);}
+    50% {-webkit-transform:rotate(-8deg);}
+    100% {-webkit-transform:rotate(8deg);}
+}
+@-moz-keyframes wiggle {
+    0% {-moz-transform:rotate(8deg);}
+    50% {-moz-transform:rotate(-8deg);}
+    100% {-moz-transform:rotate(8deg);}
+}
+
+h2 a:hover {
+    color: red;
+}
+.wiggler:hover {
+    -webkit-animation: wiggle 0.5s infinite;
+    -moz-animation: wiggle 0.5s infinite;
+    animation: wiggle 0.5s infinite;
 }
