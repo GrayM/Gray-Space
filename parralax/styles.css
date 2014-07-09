@@ -4,7 +4,7 @@
 }
 body, html {
   height : 100%;
-  
+  color:#999;
   font-family : sans-serif;
 }
 header {
@@ -13,25 +13,47 @@ header {
     text-align:center;
 }
 
+
 .slide {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 5em;
     background-image: url("http://clipartist.info/www/COLOURINGBOOK.ORG/Letters/M/magician_doing_a_trick_black_white_line_art_coloring_book_colouring-555px.png");
-    background-size:40% auto;
+    background-size:30% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.slide:nth-of-type(2n+1) {
-    padding-left: 50%;
+.slide:nth-of-type(1) {
+    padding-left: 40%;
     background-color: blue;
-    background-position: left center;
+    background-position: left 30px bottom;
 }
 .slide:nth-of-type(2) {
-    padding-right: 50%;
+    padding-right: 40%;
     background-color: green;
-    background-position: right center;
+    background-position: right 89px bottom -5px;
 }
-.bottomLine {
+.slide:nth-of-type(3) {
+    padding-left: 30%;
+    padding-right: 30%;
+    background-repeat:repeat-x;
+    background-color: purple;
+    background-position: left 30px bottom -5px;
+}
+.slide:nth-of-type(4) {
+    padding-right:30%;
+    padding-left:30%;
+    background-repeat:repeat-x;
+    background-color:gold;
+    background-position:right 30px bottom -5px;
+}
+.slide:nth-of-type(5) {
+    min-height:100vh;
+    padding-right:40%;
+    background-repeat:repeat-y;
+    background-color:orange;
+    background-position:right 89px bottom -95px;
+}
+footer {
     background-color:red;
 }
 h2 {
