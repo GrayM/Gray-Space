@@ -1,0 +1,41 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, html {
+  height : 100%;
+  
+  font-family : sans-serif;
+}
+header {
+	font-size:5em;
+	background-color:blue;
+	text-align:center;
+}
+
+.slide {
+    min-height: 100vh;
+    padding: 5em;
+    background-image: url("http://clipartist.info/www/COLOURINGBOOK.ORG/Letters/M/magician_doing_a_trick_black_white_line_art_coloring_book_colouring-555px.png");
+    background-size:40% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.slide:nth-of-type(2n+1) {
+    padding-left: 50%;
+    background-color: blue;
+    background-position: left center;
+}
+.slide:nth-of-type(2) {
+    padding-right: 50%;
+    background-color: green;
+    background-position: right center;
+}
+.bottomLine {
+	background-color:red;
+}
+h2 {
+	height:50px;
+	text-align:center;
+	padding-top:11px;
+}

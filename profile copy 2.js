@@ -26,7 +26,7 @@ var ImgBank = [
    			github_data.then(function(data){
         	var github_html = createProfileStringFromData(data);
         	$('body').append(github_html);
-		}
+}
 
 	// var github_username = person;
 	
